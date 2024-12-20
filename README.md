@@ -16,8 +16,13 @@
 **Tools**
 - 3D Printer, PLA filament (For print the mouse's case)
 - Soldering Station (For install heat-set inserts)
+- Ginelson Mini Router (For cut heat-set inserts off) [Amazon](https://www.amazon.co.jp/Ginelson-Shifting-Rechargeable-Lightweight-Polishing/dp/B08FC9762H/ref=sr_1_1_sspa?crid=17F7X4LP9QO91&dib=eyJ2IjoiMSJ9.P5g0SVMCjUbQgdIDasTuWbOdcyvVcRopgU-jTdbBkOAxRY-FqnmSFfMdAuydM913gTgobaYLZ8QCrhro3fSM6Q.Q1e9ozeo3L1gy3jksuLM5ULijbE39Xr0I-uojx3EWME&dib_tag=se&keywords=ginelson&qid=1734702661&sprefix=ginel%2Caps%2C252&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
 
 
 **2. 3D Printing & Assembly**
+
 You can download .stp from Step folder on my [github](https://github.com/khoifrvn/Left-hand-trackball-with-Adafruit-ANO-Encoder/tree/main/Step)
 
+Once you have completed the 3D printing, install the heat-set Inserts into the designated positions.
+Note: In this design, the wall on the Trackball side is quite thin, so you need to shorten the heat-set before assembly it.
+![image](https://github.com/user-attachments/assets/818af5db-e2fd-4de1-bcf3-99919578f686)
