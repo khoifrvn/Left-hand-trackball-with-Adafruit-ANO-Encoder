@@ -1,6 +1,7 @@
 ![Image](https://github.com/user-attachments/assets/c99a33c5-4c8d-4c06-9a3f-61f7584e50d6)
 
-**Prepare**
+**1. Prepare**
+
 **Parts**
 - 1 × QT Py RP2040 [Adafruit](https://www.adafruit.com/product/4900)
 - 1 x ANO Directional Navigation and Scroll Wheel Rotary Encoder [Adafruit](https://www.adafruit.com/product/5001)
@@ -17,5 +18,6 @@
 - Soldering Station (For install heat-set inserts)
 
 
-**3D Printing**
+**2. 3D Printing & Assembly**
+You can download .stp from Step folder on my [github](https://github.com/khoifrvn/Left-hand-trackball-with-Adafruit-ANO-Encoder/tree/main/Step)
 
