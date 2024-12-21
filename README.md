@@ -31,11 +31,61 @@ You can download .stp from Step folder on my [github](https://github.com/khoifrv
 Once you have completed the 3D printing, install the heat-set Inserts into the designated positions.
 
 Note: In this design, **the wall on the Trackball side is quite thin**, so you need to shorten the heat-set before assembly it.
+
 ![image](https://github.com/user-attachments/assets/818af5db-e2fd-4de1-bcf3-99919578f686)
 
 Then connect each parts as below diagram
+
 ![image](https://github.com/user-attachments/assets/1d8c63ba-37ec-4c2d-b0c9-9437591aba2d)
 
 
 **3. Software**
 
+First thing is to get the Adafruit QT Py RP2040 working in the Arduino IDE. You can follow [this guide](https://learn.adafruit.com/adafruit-qt-py-2040/arduino-ide-setup) if you never done this before.
+
+Once the board is working properly you can open the Arduino sketch located [here](https://github.com/khoifrvn/Left-hand-trackball-with-Adafruit-ANO-Encoder/blob/main/Code/main.ino) and install the required libraries in your environment.
+
+In order for the sketch to compile you will also need to change the USB stack to from Arduino to TinyUSB. You can read more on how to do that [here](https://learn.adafruit.com/mouse-and-keyboard-control-using-tinyusb-and-ble/tinyusb-mouse-and-keyboard-usage).
+
+![image](https://github.com/user-attachments/assets/5c788811-429b-4404-9dfb-4354d00c79d5)
+
+Once the board flashed successfully you can unplug, open the serial console and plug it back in.
+
+**Functions**
+- The functions on seesaw ANO module include:
+     - Moving up, down, left, or right using the navigation buttons.
+     - Selecting an option with the middle button.
+     - Scrolling vertically or horizontally using the encoder(Switching between modes by holding the middle button for about 1 second).
+- The same thing with Pimoroni trackball breakout module:
+     - Moving mouse pointer.
+     - Scrolling vertically or horizontally(Switching between modes by press trackball for about 1 second)
+
+[Youtube](https://youtu.be/a_s_giNTfWA)
+
+
+Thank you for sticking around until the end!
+
+This was a lot of fun to make and I enjoyed the process. There is certainly a lot of improvements to be made. I'd love to hear your suggestions.
+
+
+*************************************************************************************************************************************
+
+**4. FAQs**
+- The "TinyUSB_Mouse_and_Keyboard.h" library might not be available in the Arduino IDE. You can download it from [here](https://learn.adafruit.com/mouse-and-keyboard-control-using-tinyusb-and-ble/installing-the-libraries)
+- The "pimoroniTrackball.h" library can be downloaded from [here](https://github.com/ncmreynolds/pimoroniTrackball)
+- The default address of the Seesaw is 0x49, and the Pimoroni Trackball Breakout is 0x0A.
+If your board is not configured this way or you are not using a STEMMA QT Cable, you can check the I2C port using the following steps:
+     - Install the "Adafruit_TestBed.h" library in your environment.
+     - Open the I2C_scan.ino example from this library.
+     - Upload the code to your board.
+     - After uploading, open the Serial Monitor to check the address of each board.
+
+- You can check the events from each board using the original code provided [here](https://github.com/khoifrvn/Left-hand-trackball-with-Adafruit-ANO-Encoder/blob/main/Code/HwTest.ino).
+- The first time you compile the sketch, if the Arduino terminal displays something like the following issue, please check if your Arduino USB Stack is set to "Adafruit TinyUSB".
+
+        #include <HID.h>
+      ^~~~~~~
+     compilation terminated.
+     exit status 1
+     Compilation error: exit status 1
+  
