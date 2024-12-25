@@ -1,4 +1,5 @@
-![Image](https://github.com/user-attachments/assets/c99a33c5-4c8d-4c06-9a3f-61f7584e50d6)
+![image](https://github.com/user-attachments/assets/8701ac4c-9f6e-4676-9a31-b751b3f61b18)
+
 
 **1. Prepare**
 
@@ -60,7 +61,7 @@ Once the board flashed successfully you can unplug, open the serial console and 
      - Moving mouse pointer.
      - Scrolling vertically or horizontally(Switching between modes by press trackball for about 1 second)
 
-[Youtube](https://youtu.be/a_s_giNTfWA)
+You can see my demo from [Youtube](https://youtu.be/a_s_giNTfWA)
 
 
 Thank you for sticking around until the end!
